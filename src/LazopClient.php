@@ -297,6 +297,7 @@ class LazopClient
 
 	protected function logApiError($requestUrl, $errorCode, $responseTxt)
 	{
+		return false;
 		$localIp = isset($_SERVER["SERVER_ADDR"]) ? $_SERVER["SERVER_ADDR"] : "CLI";
 		$logger = new LazopLogger;
 		$logger->conf["log_file"] = rtrim(LAZOP_SDK_WORK_DIR, '\\/') . '/' . "logs/lazopsdk.log." . date("Y-m-d");
