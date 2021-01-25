@@ -1,4 +1,8 @@
 <?php
+
+namespace woroagung\lazada;
+use Exception;
+
 class LazopRequest
 {
 	public $apiName;

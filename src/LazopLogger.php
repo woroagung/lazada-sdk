@@ -1,4 +1,8 @@
 <?php
+
+namespace woroagung\lazada;
+use Illuminate\Support\Facades\Log;
+
 class LazopLogger
 {
 	public $conf = array(
